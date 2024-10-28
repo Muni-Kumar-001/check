@@ -5,7 +5,7 @@ import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome
 
 function MessagePlace() {
     const location = useLocation();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const { contactName } = location.state || {};
     const [messages, setMessages] = useState([]);
     const [message, setMessage] = useState("");
