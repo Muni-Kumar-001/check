@@ -21,7 +21,7 @@
 // export default App;
 
 import React from "react";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Change to HashRouter
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from "./compornents/signin/Login";
 import Register from "./compornents/signin/Register";
 import Head from "./compornents/chats_pages/Head";
@@ -29,7 +29,7 @@ import MessagePlace from "./compornents/chats_pages/MessagePlace";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/check">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
